@@ -8,7 +8,7 @@ apt-get update
 
 
 #########################################################
-### Install packages required for HMT editing ###########
+### Install packages required for HC MID editing ###########
 #########################################################
 
 # Clean up any catastrophic reformatting that
@@ -46,6 +46,18 @@ apt-get install -y xmlcopyeditor
 apt-get -y install mdpress
 apt-get -y install retext
 apt-get -y install pandoc
+
+
+
+#########################################################
+### Latin parsing
+#########################################################
+
+apt-get -y install sfst
+
+cd /vagrant
+/usr/bin/git clone https://github.com/goldibex/parsley-core.git
+
 
 
 #########################################################
